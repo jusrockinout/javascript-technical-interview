@@ -4,43 +4,7 @@
 
 Write a function that determines if its string argument is a palindrome.
 
-### Notes to the Interviewer
-
-Remember—you are concerned more with the candidate's ability to _communicate_ their approach than with the correctness of their solution. For the purposes of this exercise, both provided solutions are equally acceptable.
-
-If your candidate finds a solution quickly, make them work towards one of the solutions that they did _not_ discover.
-
-### Prompts from the Interviewer
-
-The interviewer may use these prompts to prompt additional problem-solving from the interviewee. It is not mandatory to raise every prompt.
-
-* **Prompt**: Are there any disadvantages to recursion?
-
-  * **Ask If**: Only ask this question if the candidate implements a recursive function.
-
-  * **Ask During**: Solution Sketch, Implementation Discussion
-
-  * **Look For**
-
-    * **Candidate Explains Shortcomings**. There is an upper limit on how many recursive calls JavaScript can handle. Calling a recursive function on a large enough string will break your code.
-
-      * The best candidates will acknowledge this, and explain that such a string is unlikely in the "real world".
-
-      * Some candidates will explain that this is not an issue with ES6.
-
-      * Either response is acceptable.
-
-      * Many candidates will not know of JavaScript's recursion ceiling. Take the opportunity to inform them.
-
 * **Prompt**: Is this the only solution?
-
-  * **Ask During**: Solution Sketch, Implementation Discussion
-
-  * **Look For**
-
-    * **Candidate Discusses Alternatives**. Strong candidates will identify multiple solution approaches, but it's okay if they don't see more than one.
-
-      * What you want to see is that the candidate **explains alternative approaches**, or **justifies why no alternative exists**.
 
 ### Hints
 
@@ -69,11 +33,11 @@ function palindrome (str) {
 
 #### Array Solution
 
-Another, less elegant, solution is to check that the first half of a string is equal to the reverse of the second half. In other words, `abba` is a palindrome because the first half, `ab`, is equal to the second half, `ba`, in _reverse_: `ab`. This is the [split solution](Solutions/split_solution.js).
+Another, less elegant, solution is to check that the first half of a string is equal to the reverse of the second half. In other words, `abba` is a palindrome because the first half, `ab`, is equal to the second half, `ba`, in _reverse_: `ab`.
 
 #### Recursive Solution
 
-A final solution is to check that the input string satisfies the basic property of a palindrome—that its first letter is equal to its last letter—and, if so, recursively check that the same is true for the substring that remaisn after removing the first and last letters. This is the [recursive solution](Solutions/recursive_solution.js).
+A final solution is to check that the input string satisfies the basic property of a palindrome—that its first letter is equal to its last letter—and, if so, recursively check that the same is true for the substring that remains after removing the first and last letters.
 
 - - -
 
