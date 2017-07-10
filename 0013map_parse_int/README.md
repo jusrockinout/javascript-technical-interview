@@ -22,7 +22,7 @@ Consider this line of JavaScript.
 
         * In particular, we expect `["1", "2", "3"].map(parseInt)` to output `[1, 2, 3]`.
 
-        * But instead, that is incorrect. Why?
+        * But that is incorrect. Why?
 
 - - -
 
